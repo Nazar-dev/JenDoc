@@ -1,0 +1,60 @@
+*{
+	background-color: #fff;
+}
+html,
+body {
+    height: 100%;
+}
+main {
+    padding-bottom: 60px;
+    padding-top: 60px;}
+.footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:60px;
+    width:100%;
+    margin-top: 50px;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.centerr {
+  margin-right: auto;
+  margin-left: auto;
+}   
+.log{
+	width: 450px;
+}
+.sel{
+    width: 500px;
+}
+.my_button {
+    width: 194px;
+    height: 68px;
+}
+.login_btn {
+    width: 100%;
+}
+.btn-toggle::before {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    line-height: 0;
+    content: url("../img/after.png");
+    transition: transform .35s ease;
+    transform-origin: 0.5em 50%;
+}
+.btn-toggle[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+}
+.collapse:not(.show) {
+    display: none;
+}
